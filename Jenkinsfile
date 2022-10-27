@@ -16,8 +16,8 @@ pipeline {
             steps {
                 mnv test
                 // junit allowEmptyResults: true, testResults: '**/test-results/*.xml'
-                junit '**/test-reports/*.xml'
-                jacoco ()
+                // junit '**/test-reports/*.xml'
+                // jacoco ()
             }
         }
         stage("code analysis") {
